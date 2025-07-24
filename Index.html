@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Webpage</title>
+    <!--
+        This is a basic style block. For larger projects,
+        it's better to use an external CSS file (e.g., style.css)
+        and link it like this: <link rel="stylesheet" href="style.css">
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font for a modern look */
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333; /* Dark gray text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        .container {
+            background-color: #ffffff; /* White background for the content box */
+            padding: 40px;
+            border-radius: 12px; /* Rounded corners for the container */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            text-align: center;
+            max-width: 600px; /* Max width for readability */
+            width: 90%; /* Responsive width */
+        }
+
+        h1 {
+            color: #2c3e50; /* Darker blue-gray for heading */
+            margin-bottom: 20px;
+            font-size: 2.5em; /* Larger font size for heading */
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1em; /* Slightly larger paragraph text */
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3498db; /* Blue button */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px; /* Rounded corners for button */
+            text-decoration: none; /* Remove underline from link */
+            margin-top: 20px;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+    <!-- Link to Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Main heading of the page -->
+        <h1>Welcome to My Simple Webpage!</h1>
+
+        <!-- A paragraph of text -->
+        <p>
+            This is a very basic HTML page. You can customize this content,
+            add more sections, images, or even interactive elements with JavaScript.
+            It's a great starting point for your web development journey.
+        </p>
+
+        <!-- Another paragraph -->
+        <p>
+            Feel free to edit this code and see the changes live!
+            Web development is all about experimenting and learning.
+        </p>
+
+        <!-- A simple button/link -->
+        <a href="https://www.google.com" class="button" target="_blank" rel="noopener noreferrer">
+            Learn More
+        </a>
+    </div>
+</body>
+</html>
